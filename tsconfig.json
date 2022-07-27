@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "typeRoots": ["./node_modules/@types",
+      "./src/types"
+    ]
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts",
+    "src/types/**/*.d.ts",
+    "src/types/**/*.ts"
+  ],
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.spec.d.ts"]
+}
